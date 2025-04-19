@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+ <TextView
+     android:id="@+id/textview"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:text="Hello"
+     android:background="@drawable/empossed_background"
+     android:layout_marginTop="50dp"
+     android:textStyle="bold"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:background="@drawable/empossed_background">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:elevation="7dp"
+            android:src="@drawable/img" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database create"
+        android:onClick="CreateDatabase"
+        android:layout_marginTop="26dp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create TABLES"
+        android:layout_marginTop="2dp"
+        android:elevation="10dp"
+        android:onClick="CreateTable"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/insertdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Data in TABLE"
+        android:onClick="InsertData"
+        android:layout_marginTop="2dp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Views"
+        android:layout_marginTop="2dp"
+        android:onClick="CreateViews"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceduredata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Stored Procedure"
+        android:onClick="Create_Stored_procedure"
+        android:layout_marginTop="2dp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retrievedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrieve data from Dataset"
+        android:onClick="Retrieve_Data"
+        android:layout_marginTop="2dp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
